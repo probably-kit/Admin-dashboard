@@ -26,11 +26,11 @@
 
 }
 
-h1{
-    font-size:larger;
+h1 {
+    font-size: larger;
 }
 
-.dashboard ul{
+.dashboard ul {
     grid-row: 2/9;
 }
 
@@ -41,9 +41,38 @@ li {
 
 .header {
     grid-column: 2/4;
-    grid-row:1/2;
+    grid-row: 1/2;
     display: grid;
-    grid-template-rows: 1fr 2fr ;
+    grid-template-rows: 1fr 2fr;
+}
+
+#search-input {
+    width: 40em;
+    height: 2em;
+    border-radius: 15px;
+    border: black solid 2px;
+}
+
+.search-pannel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-end; */
+    margin: 1.5em;
+
+
+}
+
+.search-pannel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.search-pannel-svg {
+    width: 2em;
+    height: 2em;
 }
 
 .content {
@@ -53,3 +82,40 @@ li {
     grid-template-columns: repeat(2, 1.5fr) 1fr;
     background-color: #e0e2ec;
 }
+
+.avatar {
+    
+    
+    height: 5em;
+    width: 5em;
+    object-fit: cover;
+    
+}
+
+.avatar-container{
+    border: 2px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 3em;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Assuming your image has a class of 'circle-image' 
+.circle-image-container {
+    width: 150px; /* Adjust container size 
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #000; /* Adjust color and width as needed 
+  }
+  
+  .circle-image {
+    width: 100%; /* Make the image fill the container 
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio 
+    border-radius: 50%;
+  }
+  */
