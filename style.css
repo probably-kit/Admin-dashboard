@@ -41,10 +41,9 @@ li {
 
 .header {
     grid-column: 2/5;
-    grid-row: 1/2;
     display: grid;
-    grid-template-rows: 1fr 2fr;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.2);
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
     
 }
@@ -55,6 +54,7 @@ li {
     border-radius: 15px;
     border: none;
     background-color:#e0e2ec;
+    text-indent: 1em;
 }
 
 .search-pannel {
@@ -62,11 +62,9 @@ li {
     flex-direction: row;
     justify-content: space-around;
     margin: 1.5em;
-
-
 }
 
-.search-pannel .item {
+.item {
     display: flex;
     align-items: center;
     gap: 3em;
@@ -77,17 +75,35 @@ li {
     height: 2em;
 }
 
-.content {
-    grid-column: 2/5;
-    grid-row: 2/8;
-    display: grid;
-    grid-template-columns: repeat(2, 1.5fr) 1fr;
-    background-color: #e0e2ec;
+.search-pannel-info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.search-pannel-info button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #3498db; /* Border color */
+    border-radius: 15px; /* Rounded corners */
+    color: #3498db; /* Text color */
+    background-color: #fff; /* Background color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+}
+
+.search-pannel-info button:hover{
+    background-color: #3498db; /* Hover background color */
+      color: #fff; /* Hover text color */
+      border-color: #fff; /* Hover border color */
 }
 
 .avatar {
-    
-    
     height: 5em;
     width: 5em;
     object-fit: cover;
@@ -105,6 +121,46 @@ li {
     align-items: center;
 }
 
+
+
+
+.content {
+    grid-column: 2/5;
+    grid-row: 2/8;
+    display: grid;
+    grid-template-columns: repeat(2, 1.5fr) 1fr;
+    background-color: #e0e2ec;
+}
+
+.project-grid{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 2em;
+    margin: 1em;
+}
+
+.project-grid-item{
+    background-color: white;
+    width: 25em;
+    height: 13em;
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    border-left: 1em solid #FF8900;
+}
+
+.rest{
+    margin: 1em;
+}
+
+.rest-block{
+    background-color: white;
+    width: 25em;
+    height: 20em;
+    margin: 1em;
+    border-radius: 15px;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
+    border-left: 1em solid #FF8900;
+}
 /* Assuming your image has a class of 'circle-image' 
 .circle-image-container {
     width: 150px; /* Adjust container size 
