@@ -45,7 +45,7 @@ li {
     grid-template-rows: 1fr 1fr;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
-    
+
 }
 
 #search-input {
@@ -53,7 +53,7 @@ li {
     height: 2.3em;
     border-radius: 15px;
     border: none;
-    background-color:#e0e2ec;
+    background-color: #e0e2ec;
     text-indent: 1em;
 }
 
@@ -75,11 +75,11 @@ li {
     height: 2em;
 }
 
-.search-pannel-info{
+.search-pannel-info {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 
@@ -89,28 +89,36 @@ li {
     font-size: 16px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #3498db; /* Border color */
-    border-radius: 15px; /* Rounded corners */
-    color: #3498db; /* Text color */
-    background-color: #fff; /* Background color */
+    border: 1px solid #3498db;
+    /* Border color */
+    border-radius: 15px;
+    /* Rounded corners */
+    color: #3498db;
+    /* Text color */
+    background-color: #fff;
+    /* Background color */
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    /* Smooth transitions */
 }
 
-.search-pannel-info button:hover{
-    background-color: #3498db; /* Hover background color */
-      color: #fff; /* Hover text color */
-      border-color: #fff; /* Hover border color */
+.search-pannel-info button:hover {
+    background-color: #3498db;
+    /* Hover background color */
+    color: #fff;
+    /* Hover text color */
+    border-color: #fff;
+    /* Hover border color */
 }
 
 .avatar {
     height: 5em;
     width: 5em;
     object-fit: cover;
-    
+
 }
 
-.avatar-container{
+.avatar-container {
     border: 2px solid #000;
     border-radius: 50%;
     overflow: hidden;
@@ -132,48 +140,81 @@ li {
     background-color: #e0e2ec;
 }
 
-.project-grid{
+.project-grid {
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr;
     gap: 2em;
     margin: 1em;
 }
 
-.project-grid-item{
+.project-grid-item {
     background-color: white;
     width: 25em;
     height: 13em;
     border-radius: 15px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
     border-left: 1em solid #FF8900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1em;
+    padding: 1em;
 }
 
-.rest .projects{
+.project-grid-item p {
+    color: #666;
+
+}
+
+
+.project-grid-item-svg-block {
+    margin-left: 15em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 2em;
+}
+
+.project-grid-item-svg-block img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.rest .projects {
     margin: 1em;
 }
 
-.rest-block{
+.rest-block {
     background-color: white;
     width: 25em;
     height: 20em;
     margin: 1em;
     border-radius: 15px;
     box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.1);
-    border-left: 1em solid #FF8900;
+    /* border-left: 1em solid #FF8900; */
 }
-/* Assuming your image has a class of 'circle-image' 
-.circle-image-container {
-    width: 150px; /* Adjust container size 
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-    border: 2px solid #000; /* Adjust color and width as needed 
-  }
-  
-  .circle-image {
-    width: 100%; /* Make the image fill the container 
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio 
-    border-radius: 50%;
-  }
-  */
+
+.title-txt {
+    font-size: 22px;
+    margin: 0.8em;
+    margin-top: 1.5em;
+    font-weight: 600;
+}
+
+
+hr{
+    margin: 1em;
+    background-color: #a3a0a0;
+    border: 1px solid;
+    
+}
+
+.rest-block{
+padding: 1em;
+
+}
+div > b + br +p{
+    color: #535050;
+}
+
