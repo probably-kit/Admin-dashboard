@@ -8,7 +8,7 @@
 .container-main {
     display: grid;
     /* row/column */
-    grid-template: repeat(8, 1fr) / repeat(4, 1fr);
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
 
 
 }
@@ -211,10 +211,26 @@ hr{
 }
 
 .rest-block{
-padding: 1em;
+padding: 3em;
+font-size: 14px;
 
 }
 div > b + br +p{
     color: #535050;
 }
 
+.rest-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.rest-block-item{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.rest-block-item .avatar-container{
+    border: 1px solid #535050;
+}
